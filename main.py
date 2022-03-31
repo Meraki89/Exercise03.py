@@ -15,9 +15,9 @@ def count_vowels(text):
 def hamming(text1, text2):
     if len(text1) != len(text2):
         print("Awww... too bad :( The lengths of the strings are not equal")
-        return 0
+        return int(0)
     else:
-        return len([i for i in filter(lambda x: x[0] != x[1], zip(text1, text2))])
+        return int(len([i for i in filter(lambda x: x[0] != x[1], zip(text1, text2))]))
 
 
 # class Vehicle(ABC):
